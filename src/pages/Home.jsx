@@ -7,9 +7,12 @@ import Education from '../components/Education.jsx'
 import Projects from '../components/Projects.jsx'
 import Skills from '../components/Skills.jsx'
 import Contact from '../components/Contact.jsx'
+import Footer from '../components/Footer.jsx'
+import useAOS from '../utils/useAOS.js'
 
 export default function Home() {
   const { hash } = useLocation()
+  useAOS()
 
   useEffect(() => {
     document.title = 'Porfolio'
@@ -32,6 +35,7 @@ export default function Home() {
       <Projects />
       <Skills />
       <Contact />
+      <Footer />
     </>
   )
 }

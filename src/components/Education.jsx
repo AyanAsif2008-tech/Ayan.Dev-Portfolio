@@ -34,7 +34,7 @@ const education = [
     icon: 'ri-school-line',
     title: 'Matriculation',
     place: 'Al-Makhdoom Public School',
-    period: '2026',
+    period: '2025',
     status: 'Completed',
     current: false,
     description: 'Successfully completed secondary school education.',
@@ -128,7 +128,7 @@ export default function Education() {
     <section id="education" className="education-section">
       <div className="education-container">
         {/* Section Header */}
-        <div className="education-header">
+        <div className="education-header" data-aos="fade-up">
           <span className="badge-tag">
             <i className="ri-graduation-cap-line"></i> Education &amp; Career
           </span>
@@ -141,8 +141,8 @@ export default function Education() {
         <div className="education-grid">
           {/* Education timeline */}
           <div>
-            <div className="column-title">Education</div>
-            <div className="timeline" ref={timelineRef}>
+            <div className="column-title" data-aos="fade-up">Education</div>
+            <div className="timeline" ref={timelineRef} data-aos="fade-up" data-aos-delay="100">
               <span className="timeline-line" style={{ top: geometry.top, height: geometry.height }}></span>
               <span className="timeline-progress" ref={progressRef} style={{ top: geometry.top }}></span>
               {education.map((item, index) => (
@@ -181,8 +181,8 @@ export default function Education() {
 
           {/* Career */}
           <div>
-            <div className="column-title">Career</div>
-            <div className="bento-card career-card">
+            <div className="column-title" data-aos="fade-up" data-aos-delay="150">Career</div>
+            <div className="bento-card career-card" data-aos="fade-up" data-aos-delay="250">
               <div className="glow-spot"></div>
               <div className="card-inner">
                 <div className="card-top-row">

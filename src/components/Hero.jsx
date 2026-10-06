@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
 
 const words = [
   'Full Stack Developer',
@@ -64,28 +63,28 @@ export default function Hero() {
   return (
     <section id="home" className="hero">
       <div className="hero-content">
-        <div className="hero-badge">
+        <div className="hero-badge" data-aos="fade-down">
           <span className="pulse-dot"></span> Available for Web Development Projects
         </div>
-        <h1>
+        <h1 data-aos="fade-up" data-aos-delay="100">
           Hi, I'm <span className="highlight">Ayan Asif</span>
         </h1>
 
-        <h2 className="hero-subtitle">
+        <h2 className="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
           I'm a <span className="typing-text" id="typing-output">{typed}</span>
           <span className="cursor">|</span>
         </h2>
 
-        <p className="hero-description">
+        <p className="hero-description" data-aos="fade-up" data-aos-delay="300">
           A passionate software development student specializing in crafting responsive, high-performance frontends and robust backend solutions.
         </p>
 
-        <div className="hero-buttons">
-          <Link to="/projects" className="btn-primary">View My Work</Link>
-          <Link to="/contact" className="btn-secondary">Let's Connect</Link>
+        <div className="hero-buttons" data-aos="fade-up" data-aos-delay="400">
+          <a href="#projects" className="btn-primary">View My Work</a>
+          <a href="#contact" className="btn-secondary">Let's Connect</a>
         </div>
 
-        <div className="hero-socials">
+        <div className="hero-socials" data-aos="fade-up" data-aos-delay="500">
           <span>Find me on</span>
           <a
             href="https://github.com/AyanAsif2008-tech"
@@ -103,7 +102,7 @@ export default function Hero() {
       </div>
 
       <div className="hero-visual">
-        <div className="hero-orbit">
+        <div className="hero-orbit" data-aos="zoom-in" data-aos-delay="300" data-aos-duration="1100">
           <span className="orbit-ring ring-1"></span>
           <span className="orbit-ring ring-2"></span>
 

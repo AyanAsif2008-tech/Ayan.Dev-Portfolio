@@ -49,7 +49,7 @@ export default function Projects() {
     <section id="projects" className="projects-section">
       <div className="projects-container">
         {/* Section Header */}
-        <div className="projects-header">
+        <div className="projects-header" data-aos="fade-up">
           <span className="badge-tag">
             <i className="ri-rocket-line"></i> Featured Works
           </span>
@@ -60,7 +60,7 @@ export default function Projects() {
         </div>
 
         {/* Slider: arrows outside, slides between two divider lines, dots below */}
-        <div className="carousel-wrapper">
+        <div className="carousel-wrapper" data-aos="fade-up" data-aos-delay="150">
           <button className="carousel-btn prev-btn" id="prevBtn" aria-label="Previous Project" onClick={prev}>
             <i className="ri-arrow-left-line"></i>
           </button>
